@@ -18,16 +18,16 @@ const companySchema = {
 			type: "object",
 			properties: {
 				phoneNumber: { type: "string", pattern: "^[0-9]{11}$" },
-				website: { type: "string", format: "uri" },
+				website: { type: "string" },
 			},
 			required: ["phoneNumber", "website"],
 		},
 		links: {
 			type: "object",
 			properties: {
-				linkedIn: { type: "string", format: "uri" },
-				facebook: { type: "string", format: "uri" },
-				instagram: { type: "string", format: "uri" },
+				linkedIn: { type: "string" },
+				facebook: { type: "string" },
+				instagram: { type: "string" },
 			},
 		},
 		techStack: {
