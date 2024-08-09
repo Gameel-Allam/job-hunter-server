@@ -42,8 +42,8 @@ const employeeSchema = {
 		links: {
 			type: "object",
 			properties: {
-				linkedIn: { type: "string", format: "uri" },
-				github: { type: "string", format: "uri" },
+				linkedIn: { type: "string"},
+				github: { type: "string" },
 			},
 		},
 		role: { type: "string", enum: ["employee"] },
